@@ -1,1 +1,0 @@
-# EduGenie backend modules package
