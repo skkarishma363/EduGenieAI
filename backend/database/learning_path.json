@@ -1,0 +1,134 @@
+[
+  {
+    "id": "e025105e-daf8-44b6-8f5a-8b8079afe360",
+    "query_id": "0238a2f8-147d-451e-9491-ab24f48e6c7b",
+    "roadmap_title": "Data Structures and Algorithms (DSA) Pathway",
+    "overview": "This roadmap provides a comprehensive, structured path to mastering Data Structures and Algorithms, starting from fundamental linear structures, advancing through trees and graphs, and culminating in advanced dynamic programming and optimization algorithms.",
+    "milestones": [
+      {
+        "title": "Foundations & Linear Data Structures",
+        "duration": "4-6 weeks",
+        "topics": [
+          "Time and Space Complexity (Big O Notation)",
+          "Arrays and Dynamic Arrays",
+          "Singly and Doubly Linked Lists",
+          "Stacks and Queues",
+          "Basic Searching and Sorting (Binary Search, Bubble/Merge Sort)"
+        ],
+        "practical_exercises": [
+          "Implement a custom ArrayList and LinkedList from scratch",
+          "Create a Browser History Navigation system using Stacks"
+        ],
+        "recommended_resources": [
+          "'Introduction to Algorithms' (CLRS) - Foundations Chapters",
+          "LeetCode - Explore Card: Queue & Stack",
+          "GeeksforGeeks - Basic Data Structures Guide"
+        ]
+      },
+      {
+        "title": "Non-Linear Data Structures & Classic Algorithms",
+        "duration": "6-8 weeks",
+        "topics": [
+          "Binary Trees and Binary Search Trees (BST)",
+          "Heaps and Priority Queues",
+          "Graph Representations, BFS and DFS",
+          "Hashing and Hash Maps",
+          "Recursion and Backtracking"
+        ],
+        "practical_exercises": [
+          "Build a File System Directory Tree Explorer",
+          "Implement a Maze Solver using Backtracking and Depth-First Search"
+        ],
+        "recommended_resources": [
+          "Algorithms Specialization by Stanford University (Coursera)",
+          "LeetCode - Explore Card: Binary Tree and Graph",
+          "HackerRank - Interview Preparation Kit"
+        ]
+      },
+      {
+        "title": "Advanced Algorithms & Optimization Techniques",
+        "duration": "6-8 weeks",
+        "topics": [
+          "Dynamic Programming (Memoization and Tabulation)",
+          "Advanced Graph Algorithms (Dijkstra, Kruskal, Prim's)",
+          "Tries and Segment Trees",
+          "Greedy Algorithms and Bit Manipulation",
+          "String Matching Algorithms (KMP and Rabin-Karp)"
+        ],
+        "practical_exercises": [
+          "Develop a GPS Navigation Shortest Path Finder using Dijkstra's algorithm",
+          "Build a Search Engine Autocomplete system using a Trie data structure"
+        ],
+        "recommended_resources": [
+          "'The Algorithm Design Manual' by Steven Skiena",
+          "LeetCode - Dynamic Programming Study Plan",
+          "Codeforces - Competitive Programmer's Handbook"
+        ]
+      }
+    ],
+    "created_at": "2026-07-14T05:45:22.512392+00:00"
+  },
+  {
+    "id": "9fe39468-87f1-4f64-bc6e-750295d422c9",
+    "query_id": "c09c0e7f-f9e1-4bec-a048-0cc610549aa2",
+    "roadmap_title": "Python Programming Mastery Roadmap",
+    "overview": "A comprehensive journey guiding absolute beginners to advanced Python developers, focusing on core syntax, object-oriented concepts, and professional software engineering practices.",
+    "milestones": [
+      {
+        "title": "Beginner Foundations",
+        "duration": "4 weeks",
+        "topics": [
+          "Variables, Data Types, and Operators",
+          "Control Flow (If/Else, Loops)",
+          "Functions and Scope",
+          "Basic Data Structures (Lists, Dictionaries, Tuples, Sets)"
+        ],
+        "practical_exercises": [
+          "Command-Line Calculator",
+          "Guess the Number Guessing Game"
+        ],
+        "recommended_resources": [
+          "Python.org's Official Tutorial for Beginners",
+          "Automate the Boring Stuff with Python by Al Sweigart"
+        ]
+      },
+      {
+        "title": "Intermediate Concepts & OOP",
+        "duration": "6 weeks",
+        "topics": [
+          "Object-Oriented Programming (Classes, Inheritance, Polymorphism)",
+          "File Handling & Exception Handling",
+          "Working with Modules, Packages, and virtualenv",
+          "List Comprehensions & Generator Expressions"
+        ],
+        "practical_exercises": [
+          "Personal Expense Tracker with CSV/JSON Storage",
+          "CLI Weather App using requests to fetch API data"
+        ],
+        "recommended_resources": [
+          "Real Python Tutorials (realpython.com)",
+          "Python Crash Course by Eric Matthes"
+        ]
+      },
+      {
+        "title": "Advanced Mastery & Engineering",
+        "duration": "8 weeks",
+        "topics": [
+          "Decorators, Context Managers, and Metaclasses",
+          "Concurrency (Threading, Multiprocessing, and Asyncio)",
+          "Database Integration (SQLite & SQLAlchemy ORM)",
+          "Testing and Debugging with pytest"
+        ],
+        "practical_exercises": [
+          "Asynchronous Web Scraper with Database Storage",
+          "RESTful API built with FastAPI or Flask"
+        ],
+        "recommended_resources": [
+          "Fluent Python by Luciano Ramalho",
+          "Official Python Documentation (Advanced Guides and PEPs)"
+        ]
+      }
+    ],
+    "created_at": "2026-07-14T06:05:38.901698+00:00"
+  }
+]

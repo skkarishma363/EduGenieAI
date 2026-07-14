@@ -1,0 +1,8 @@
+[
+  {
+    "id": "a2f31152-1de6-4c1d-95f5-6f9a20c6bac4",
+    "query_id": "208fa29d-ae17-4cbf-805a-cdd5f8c309d2",
+    "content": "## Title\nIntroduction to Machine Learning\n\n## Short Summary\nMachine learning is a branch of artificial intelligence that enables computers to learn from data instead of following pre-written programming. It is categorized into three primary types based on how the system processes information: supervised, unsupervised, and reinforcement learning.\n\n## Key Points\n* **Artificial Intelligence Subset:** Machine learning is a specialized subfield within the broader domain of artificial intelligence.\n* **Pattern Recognition:** Instead of requiring explicit programming for every specific task, computers autonomously identify and learn patterns directly from data.\n* **Three Primary Types:** The technology is divided into three main learning methodologies: supervised learning, unsupervised learning, and reinforcement learning.",
+    "created_at": "2026-07-14T06:04:57.982194+00:00"
+  }
+]

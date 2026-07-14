@@ -1,0 +1,64 @@
+[
+  {
+    "id": "19612ac7-ed8a-4759-b067-dec0907b7327",
+    "query_id": "652b991d-3ca8-4991-8596-7e6da657ede4",
+    "questions": [
+      {
+        "question": "What is the primary pigment responsible for absorbing light during photosynthesis?",
+        "options": [
+          "Carotenoid",
+          "Chlorophyll a",
+          "Anthocyanin",
+          "Phycobilin"
+        ],
+        "correct_option_index": 1,
+        "explanation": "Chlorophyll a is the primary pigment in plants responsible for absorbing light energy, particularly in the blue-violet and red wavelengths, to drive photosynthesis."
+      },
+      {
+        "question": "During the light-dependent reactions of photosynthesis, what is the immediate source of electrons used to replace those lost by the reaction center of Photosystem II?",
+        "options": [
+          "Water",
+          "Carbon dioxide",
+          "NADPH",
+          "Oxygen"
+        ],
+        "correct_option_index": 0,
+        "explanation": "In Photosystem II, light absorption causes electrons to be excited and lost. These electrons are replaced by splitting water molecules (photolysis), which produces oxygen gas, protons, and electrons."
+      },
+      {
+        "question": "In which specific region of the chloroplast does the Calvin Cycle (light-independent reactions) take place?",
+        "options": [
+          "Thylakoid lumen",
+          "Thylakoid membrane",
+          "Stroma",
+          "Inner membrane space"
+        ],
+        "correct_option_index": 2,
+        "explanation": "While the light-dependent reactions occur in the thylakoid membranes, the light-independent reactions (Calvin Cycle) take place in the stroma, which is the fluid-filled region surrounding the thylakoids."
+      },
+      {
+        "question": "What is the primary role of the enzyme Rubisco in the Calvin Cycle?",
+        "options": [
+          "Reducing 3-phosphoglycerate (3-PGA) to G3P using NADPH",
+          "Fixing atmospheric carbon dioxide to ribulose 1,5-bisphosphate (RuBP)",
+          "Regenerating RuBP from glyceraldehyde 3-phosphate (G3P)",
+          "Splitting water to release oxygen and electrons"
+        ],
+        "correct_option_index": 1,
+        "explanation": "Rubisco (Ribulose-1,5-bisphosphate carboxylase-oxygenase) catalyzes the initial step of carbon fixation, attaching atmospheric carbon dioxide to the 5-carbon sugar RuBP."
+      },
+      {
+        "question": "How do C4 plants minimize photorespiration compared to C3 plants?",
+        "options": [
+          "By performing the Calvin Cycle only at night when temperatures are cooler",
+          "By using PEP carboxylase to fix carbon in mesophyll cells, physically separating initial carbon fixation from the Calvin Cycle in bundle-sheath cells",
+          "By closing their stomata permanently and relying entirely on stored oxygen",
+          "By converting carbon dioxide directly into glucose without using Rubisco"
+        ],
+        "correct_option_index": 1,
+        "explanation": "C4 plants separate the initial fixation of carbon dioxide (by PEP carboxylase in mesophyll cells) from the Calvin Cycle (where Rubisco operates in bundle-sheath cells). This spatial separation concentrates carbon dioxide around Rubisco, greatly reducing wasteful photorespiration."
+      }
+    ],
+    "created_at": "2026-07-14T06:05:17.221945+00:00"
+  }
+]

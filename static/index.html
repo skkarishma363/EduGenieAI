@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGenie - Google Gemini Powered Learning Assistant</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Marked.js for Markdown Rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Background Gradients -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- App Container -->
+    <div class="app-container">
+        
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">EduGenie</span>
+                    <span class="brand-tagline">Google Gemini Powered Learning Assistant</span>
+                </div>
+            </div>
+            <button class="settings-btn" id="settingsBtn" title="Set Gemini API Key">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1 class="hero-title">Learn Smarter with <span class="gradient-text">AI</span></h1>
+                <p class="hero-desc">
+                    Ask questions, understand concepts, generate quizzes, summarize educational content, and receive personalized learning recommendations.
+                </p>
+            </section>
+
+            <!-- Workspace Section -->
+            <div class="workspace-grid">
+                
+                <!-- Input Card -->
+                <div class="glass-card workspace-card">
+                    <div class="card-header">
+                        <div class="header-icon purple-gradient">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3>Study Workspace</h3>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="taskSelect"><i class="fa-solid fa-list-check"></i> Choose Learning Task</label>
+                        <div class="select-wrapper">
+                            <select id="taskSelect">
+                                <option value="question_answering">Question Answering</option>
+                                <option value="concept_explanation">Concept Explanation</option>
+                                <option value="quiz_generation">Quiz Generation</option>
+                                <option value="text_summarization">Text Summarization</option>
+                                <option value="learning_path">Learning Path Recommendation</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down select-arrow"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPrompt" id="textareaLabel"><i class="fa-solid fa-pen-nib"></i> What do you want to learn?</label>
+                        <textarea id="inputPrompt" placeholder="Ask your question here..."></textarea>
+                        <div class="char-count" id="charCount">0 characters</div>
+                    </div>
+
+                    <button id="generateBtn" class="primary-btn">
+                        <span class="btn-text">Generate Learning Insights</span>
+                        <span class="btn-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                    </button>
+                </div>
+
+                <!-- Result Card -->
+                <div class="glass-card result-card hidden" id="resultCard">
+                    <div class="result-header">
+                        <div class="result-header-title">
+                            <div class="header-icon blue-gradient" id="resultHeaderIcon">
+                                <i class="fa-solid fa-square-poll-horizontal"></i>
+                            </div>
+                            <h3 id="resultTitle">Generated Result</h3>
+                        </div>
+                        <div class="result-actions">
+                            <button id="copyBtn" class="icon-btn" title="Copy Content">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Loader -->
+                    <div class="loader-container hidden" id="loader">
+                        <div class="spinner"></div>
+                        <p class="loader-text">EduGenie is crafting your answer...</p>
+                    </div>
+
+                    <!-- Output Content -->
+                    <div class="result-body" id="resultBody">
+                        <!-- Content will be dynamically inserted here -->
+                    </div>
+                </div>
+
+                <!-- Empty State Card (Visible initially) -->
+                <div class="glass-card result-card empty-state" id="emptyStateCard">
+                    <div class="empty-state-content">
+                        <i class="fa-solid fa-graduation-cap empty-icon"></i>
+                        <h3>Your Learning Workspace</h3>
+                        <p>Select a learning task, enter your topic or prompt, and click generate. Your AI-powered educational insights will appear here in real-time.</p>
+                        <div class="features-badge-container">
+                            <span class="feature-badge"><i class="fa-solid fa-bolt"></i> Instant Explanations</span>
+                            <span class="feature-badge"><i class="fa-solid fa-gamepad"></i> Interactive Quizzes</span>
+                            <span class="feature-badge"><i class="fa-solid fa-route"></i> Roadmap Visualizer</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>EduGenie &copy; 2026. Made with passion for College Final-Year Project.</p>
+            <p class="footer-sub">Powered by <span class="gemini-highlight">Google Gemini</span> & <span class="fastapi-highlight">FastAPI</span></p>
+        </footer>
+
+    </div>
+
+    <!-- API Key Settings Modal -->
+    <div class="modal-overlay hidden" id="settingsModal">
+        <div class="modal glass-card">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-key"></i> Gemini API Settings</h3>
+                <button class="close-btn" id="closeSettingsBtn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>EduGenie uses the official Google Gemini API to power its insights. You can configure your own API key below. It will be stored securely in your browser's local storage and used only for your requests.</p>
+                
+                <div class="form-group">
+                    <label for="apiKeyInput">Gemini API Key</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="apiKeyInput" placeholder="AIzaSy...">
+                        <button class="toggle-password" id="togglePasswordBtn"><i class="fa-solid fa-eye"></i></button>
+                    </div>
+                    <small class="help-text">If left empty, EduGenie will use the server's default configuration.</small>
+                </div>
+                
+                <div class="modal-actions">
+                    <button class="secondary-btn" id="clearKeyBtn">Clear Key</button>
+                    <button class="primary-btn" id="saveKeyBtn">Save API Key</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Custom Script -->
+    <script src="/static/script.js"></script>
+</body>
+</html>
