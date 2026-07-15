@@ -42,7 +42,7 @@ logger = logging.getLogger("edugenie.gemini")
 #  Configuration                                                                #
 # --------------------------------------------------------------------------- #
 
-_MODEL        = "gemini-2.5-flash"
+_MODEL        = "gemini-3.5-flash"   # gemini-2.5-flash is unavailable on free-tier keys
 _MAX_RETRIES  = 3
 _RETRY_DELAY  = 2   # seconds between retry attempts
 _BUSY_MESSAGE = "The AI service is currently busy. Please try again in a few moments."

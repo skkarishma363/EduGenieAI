@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "id": "43129928-631b-4a8e-9bbe-fbe13b13ae44",
+    "query_id": "31645967-f1d5-4f96-8838-a0f92db4362e",
+    "type": "markdown",
+    "content_preview": "# Understanding Newton's Second Law of Motion\n\nImagine trying to push a tiny toy car across the floor. Now, imagine trying to push a real, heavy school bus. \n\nWhich one is easier to speed up? Obviously, the toy car! \n\nThis simple idea is the heart of **Newton's Second Law of Motion**. Discovered by ",
+    "created_at": "2026-07-14T07:31:36.518329+00:00"
+  },
+  {
+    "id": "cf52dded-cc6d-4323-80d6-a0ab6af22dee",
+    "query_id": "94e66f8f-2a80-40ad-8dc5-b6ffb19f3eb6",
+    "type": "markdown",
+    "content_preview": "## Real-World Analogy\n\nImagine you are standing in a long, straight line at a movie theater ticket booth, and you want to know what position you are in the line. \n\nYou can’t see the front of the line because it’s too long. What do you do? \n\nInstead of walking to the front and counting everyone (whic",
+    "created_at": "2026-07-14T07:31:57.466280+00:00"
+  },
+  {
+    "id": "3e14ad59-4d06-4a00-b350-16c00d462092",
+    "query_id": "5bd9a634-aa75-4d97-b520-40f61855c287",
+    "type": "quiz",
+    "content_preview": "5 questions generated",
+    "created_at": "2026-07-14T07:33:24.190551+00:00"
+  },
+  {
+    "id": "16050f0c-933d-4e78-89f7-f78a55f9d35f",
+    "query_id": "c5100efb-d6c8-4618-b81f-13f32bfa5397",
+    "type": "markdown",
+    "content_preview": "## Real-World Analogy\n\nImagine a **capsule of medicine**. \n\nInside the capsule, there is a mix of active ingredients (data and formulas). The outer gel shell hides those ingredients and protects them from the outside environment. More importantly, it protects *you* from tasting the bitter medicine d",
+    "created_at": "2026-07-14T07:35:10.187262+00:00"
+  }
+]

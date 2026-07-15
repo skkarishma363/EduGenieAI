@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "id": "31645967-f1d5-4f96-8838-a0f92db4362e",
+    "user_id": "b9937b6a-78a9-4f8a-9e2e-1087f42a06e0",
+    "task_type": "question_answering",
+    "input_text": "What is Newton second law of motion?",
+    "created_at": "2026-07-14T07:31:36.517028+00:00"
+  },
+  {
+    "id": "94e66f8f-2a80-40ad-8dc5-b6ffb19f3eb6",
+    "user_id": "b9937b6a-78a9-4f8a-9e2e-1087f42a06e0",
+    "task_type": "concept_explanation",
+    "input_text": "Recursion in programming",
+    "created_at": "2026-07-14T07:31:57.457176+00:00"
+  },
+  {
+    "id": "5bd9a634-aa75-4d97-b520-40f61855c287",
+    "user_id": "b9937b6a-78a9-4f8a-9e2e-1087f42a06e0",
+    "task_type": "quiz_generation",
+    "input_text": "Python basics",
+    "created_at": "2026-07-14T07:33:24.163661+00:00"
+  },
+  {
+    "id": "c5100efb-d6c8-4618-b81f-13f32bfa5397",
+    "user_id": "b9937b6a-78a9-4f8a-9e2e-1087f42a06e0",
+    "task_type": "concept_explanation",
+    "input_text": "Explain encapsultion",
+    "created_at": "2026-07-14T07:35:10.166976+00:00"
+  }
+]
